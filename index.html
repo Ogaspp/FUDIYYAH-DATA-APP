@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FUDIYYAH DATA APP</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f3f6f9;
+    color: #222;
+}
+
+header {
+    background: #075c42;
+    color: white;
+    padding: 25px 20px;
+    border-radius: 0 0 25px 25px;
+}
+
+header h2 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.wallet {
+    background: white;
+    margin: -1px 18px 20px;
+    padding: 22px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #00000010;
+}
+
+.wallet p {
+    color: #777;
+    font-size: 14px;
+}
+
+.wallet h1 {
+    color: #075c42;
+    margin: 12px 0;
+}
+
+.wallet button {
+    background: #075c42;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+}
+
+.container {
+    padding: 0 18px;
+}
+
+h3 {
+    margin: 20px 0 15px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+}
+
+.service {
+    background: white;
+    padding: 23px 12px;
+    border-radius: 13px;
+    text-align: center;
+    box-shadow: 0 3px 10px #00000008;
+}
+
+.service span {
+    font-size: 30px;
+}
+
+.service h4 {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.service p {
+    font-size: 11px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.notice {
+    background: #e1f3eb;
+    color: #075c42;
+    padding: 17px;
+    border-radius: 12px;
+    margin: 22px 0;
+    font-size: 13px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #888;
+    font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>FUDIYYAH DATA</h2>
+    <p>Your Trusted VTU & Digital Payment Platform</p>
+</header>
+
+<div class="wallet">
+    <p>Available Wallet Balance</p>
+    <h1>₦0.00</h1>
+    <button onclick="alert('Wallet funding will be available soon!')">
+        + Fund Wallet
+    </button>
+</div>
+
+<div class="container">
+
+    <h3>Our Services</h3>
+
+    <div class="services">
+
+        <div class="service" onclick="comingSoon()">
+            <span>📶</span>
+            <h4>Buy Data</h4>
+            <p>MTN, Airtel, Glo, 9mobile</p>
+        </div>
+
+        <div class="service" onclick="comingSoon()">
+            <span>📞</span>
+            <h4>Buy Airtime</h4>
+            <p>All Networks</p>
+        </div>
+
+        <div class="service" onclick="comingSoon()">
+            <span>📺</span>
+            <h4>Cable TV</h4>
+            <p>DStv, GOtv, Startimes</p>
+        </div>
+
+        <div class="service" onclick="comingSoon()">
+            <span>💡</span>
+            <h4>Electricity</h4>
+            <p>Pay Electricity Bills</p>
+        </div>
+
+        <div class="service" onclick="comingSoon()">
+            <span>💳</span>
+            <h4>Wallet</h4>
+            <p>Manage Your Funds</p>
+        </div>
+
+        <div class="service" onclick="comingSoon()">
+            <span>🏪</span>
+            <h4>Become a Reseller</h4>
+            <p>Start Your Data Business</p>
+        </div>
+
+    </div>
+
+    <div class="notice">
+        <strong>Welcome to FUDIYYAH DATA APP!</strong>
+        <p>Enjoy easy access to digital services in one place.</p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 FUDIYYAH DATA APP.
+    All Rights Reserved.
+</footer>
+
+<script>
+function comingSoon() {
+    alert("This service is coming soon!");
+}
+</script>
+
+</body>
+  </html>
