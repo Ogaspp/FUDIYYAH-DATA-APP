@@ -137,7 +137,7 @@ footer {
 
     <div class="services">
 
-        <div class="service" onclick="comingSoon()">
+        <div class="service" onclick="buyData()">
             <span>📶</span>
             <h4>Buy Data</h4>
             <p>MTN, Airtel, Glo, 9mobile</p>
@@ -188,8 +188,39 @@ footer {
 </footer>
 
 <script>
-function comingSoon() {
-    alert("This service is coming soon!");
+function buyData() {
+    let network = prompt("Choose Network: MTN or AIRTEL");
+
+    if (!network) return;
+
+    network = network.toUpperCase();
+
+    if (!["MTN", "AIRTEL", "GLO", "9MOBILE"].includes(network)) {
+    alert("Please select MTN, AIRTEL, GLO or 9MOBILE");
+    return;
+}
+
+    let phone = prompt("Enter Customer Phone Number:");
+
+    if (!phone) return;
+
+    if (!/^\d{11}$/.test(phone)) {
+        alert("Enter a valid 11-digit phone number");
+        return;
+    }
+
+    let plan = prompt(
+        "Choose Data Plan:\n1. 500MB\n2. 1GB\n3. 2GB\n4. 5GB"
+    );
+
+    if (!plan) return;
+
+    alert(
+        "FUDIYYAH DATA\n\nNetwork: " + network +
+        "\nPhone: " + phone +
+        "\nPlan: " + plan +
+        "\n\nDemo only. No payment or data purchase made."
+    );
 }
 </script>
 
