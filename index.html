@@ -223,6 +223,40 @@ function buyData() {
     );
 }
 
+    function buyAirtime() {
+    let network = prompt("Choose Network: MTN, AIRTEL, GLO or 9MOBILE");
+    if (!network) return;
+
+    network = network.toUpperCase();
+
+    if (!["MTN", "AIRTEL", "GLO", "9MOBILE"].includes(network)) {
+        alert("Invalid network");
+        return;
+    }
+
+    let phone = prompt("Enter Customer Phone Number:");
+    if (!phone) return;
+
+    if (!/^\d{11}$/.test(phone)) {
+        alert("Enter a valid 11-digit phone number");
+        return;
+    }
+
+    let amount = prompt("Enter Airtime Amount in Naira:");
+    if (!amount || isNaN(amount) || Number(amount) <= 0) return;
+
+    alert(
+        "FUDIYYAH DATA\n\nNetwork: " + network +
+        "\nPhone: " + phone +
+        "\nAmount: ₦" + amount +
+        "\n\nDemo only. No airtime purchase made."
+    );
+}
+
+function comingSoon() {
+    alert("This service is coming soon!");
+}
+
 
 </script>
 
