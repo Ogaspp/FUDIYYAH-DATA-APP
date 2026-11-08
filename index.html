@@ -187,7 +187,19 @@ footer {
     All Rights Reserved.
 </footer>
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+        ‎// SUPABASE CONNECTION
+‎const SUPABASE_URL = "https://ddqyoifgkjgpmeihgkek.supabase.co";
+‎
+‎const SUPABASE_KEY = "sb_publishable_mjWseDRavvYutXM1typOSQ_6QZiFXTJ";
+‎
+‎const supabaseClient = window.supabase.createClient(
+‎    SUPABASE_URL,
+‎    SUPABASE_KEY
+‎);
+‎
+‎console.log("FUDIYYAH DATA APP connected to Supabase");
 function buyData() {
     let network = prompt("Choose Network: MTN or AIRTEL");
 
