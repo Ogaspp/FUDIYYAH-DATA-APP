@@ -137,7 +137,7 @@ footer {
 
     <div class="services">
 
-<div class="service" onclick="alert('CARD CLICKED'); buyData()">            <span>📶</span>
+<div class="service" onclick="buyData()">            <span>📶</span>
             <h4>Buy Data</h4>
             <p>MTN, Airtel, Glo, 9mobile</p>
         </div>
@@ -200,8 +200,10 @@ footer {
 ‎
 ‎console.log("FUDIYYAH DATA APP connected to Supabase");
 function buyData() {
-    let network = prompt("Choose Network: MTN or AIRTEL");
+    alert("INSIDE BUYDATA FUNCTION");
 
+    let network = prompt("Choose Network: MTN, AIRTEL, GLO or 9MOBILE");
+    
     if (!network) return;
 
     network = network.toUpperCase();
